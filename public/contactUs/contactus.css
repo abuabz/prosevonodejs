@@ -1,0 +1,112 @@
+#connectUs {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 17px;
+    background: #ffffffc7;
+    width: 86%;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+    height: 81px;
+    justify-content: center;
+}
+#connectUsR {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 300;
+    background: #ffffffc7;
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 33px;
+    border-top-left-radius: 33px;
+    flex-direction: column;
+    margin-right: 69px;
+    align-items: center;
+    text-align-last: center;
+}
+#connectUsDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 17px;
+    background: #ffffffc7;
+    width: 86%;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+    height: 37%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#mapimg{
+    border-bottom-left-radius: 33px;
+    border-top-left-radius: 33px;
+}
+#mapimg:hover{
+    scale: 1.1;
+    transition: 3s;
+}
+
+
+.contactAll {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:750px){
+    #mapimg{
+        border-bottom-left-radius: 33px;
+        border-top-left-radius: 33px;
+        /* scale: 1.1; */
+    }
+    #connectUs {
+        display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 17px;
+    background: #ffffffc7;
+    width: 89%;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+    height: 81px;
+    justify-content: center;
+    align-self: flex-end;
+    }
+    
+#connectUsDetails {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 17px;
+    background: #ffffffc7;
+    width: 89%;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+    height: 37%;
+    justify-content: center;
+}
+
+.contactAll {
+    display: flex;
+    flex-direction: column;
+}
+#connectUsR {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 300;
+    background: #ffffffc7;
+    margin-left: 11%;
+    width: 89%;
+    height: auto;
+    border-bottom-left-radius: 33px;
+    border-top-left-radius: 33px;
+    margin-top: 22px;
+    justify-content: center;
+    flex-direction: column;
+}
+}

@@ -1,0 +1,112 @@
+body{
+    background-color: #212529;
+}
+#ServiceSec {
+    height: auto;
+    background: #cf8f17;
+}
+#servicesHead {
+    font-size: 1.5rem;
+    padding: 27px;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 7px;
+    padding-top: 113px;
+}
+
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    background: #ffffff00;
+    border-radius: 10px;
+    border: solid 3px white;
+    border-top: solid 0px;
+    padding-top: 0px;
+}
+.cardsservice {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+#servicesCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff0;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+    width: 22rem;
+    border: none;
+    text-align:  -webkit-center;
+}
+.cardsservice .card-img-top {
+    transition: transform 1s ease-in-out;
+}
+
+.cardsservice .card-img-top:hover {
+    transform: scale(1.1);
+    filter: grayscale(10%);
+
+}
+.card-img-top {
+    border: solid 2px white;
+    filter: grayscale(80%);
+}
+
+
+#reviewImg{
+    height: 31vh;
+    width: 58%;
+    align-self: center;
+    border: none;
+    opacity: 60%;
+    filter: grayscale(100);
+}
+#reviewComing {
+    background-color: #212529c7;
+    color: white;
+    padding: 14px;
+    max-width: 500px;
+    width: 50%;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+@media(max-width:500px){
+    #servicesHead {
+        font-size: 1.1rem;
+        padding: 27px;
+        text-align: center;
+        font-weight: 200;
+        letter-spacing: 5px;
+        padding-top: 71px;
+    }
+    #servicesCard{
+        width: 19rem;
+        margin-top: 50px;
+    }
+    #reviewComing {
+        background-color: #212529c7;
+        color: white;
+        padding: 14px;
+        width: 91%;
+        border-radius: 12px;
+        font-size: 1.5rem;
+    }
+      
+}
+@media (max-width: 850px){
+.cardsservice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ServiceSec {
+    height: auto;
+    background: #cf8f17;
+}
+
+
+}

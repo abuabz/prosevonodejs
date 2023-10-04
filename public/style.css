@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+#navHead {
+  font-size: 30px;
+  padding-left: 15px;
+  color: #dee2e6;
+  margin-right: auto;
+}
+.navbar-collapse{
+    justify-content: right;
+    color: #cf8f17;
+    FONT-SIZE: 18px;
+    padding-right: 30px;
+}
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #cf8f17;
+    font-weight: bolder;
+}
+#navLink{
+    padding-right: 30px;
+}
+#navLink:hover{
+    color: #cf8f17;
+}
+/* #HomeSec{
+    height: 100vh;
+} */
+#AboutSec{
+    margin-top: 30px;
+}
+#HcardTite{
+    font-size: 3.5rem;
+    font-weight: 100;
+    transition: 1s;
+
+}
+#HcardTite:hover{
+    font-size: 3.5rem;
+    font-weight: 100;
+    letter-spacing: 10px;
+    transition: 1s;
+}
+#HcardBody{
+    flex: 1 1 auto;
+    margin-top: -185px;
+    background: #cf8f17;
+    text-align: center;
+    height: 200px;
+}
+#cardText{
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+#cardBtn {
+    background-color: #cf8f17;
+    border-radius: 2px;
+    border: solid 1px;
+    width: 180px;
+    font-size: 1rem;
+    padding: 12px;
+    letter-spacing: 3px;
+}
+#cardBtn:hover{
+    background-color: black;
+    color: white;
+    border: solid 1px black;
+    transition: .5s;
+}
+#cardImage{
+    width: 100%;
+}
+
+
+
+/* AboutSections */
+
+#AboutHead{
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 5px;
+}
+#AboutSec {
+    margin-top: 30px;
+    text-align: -webkit-center;
+}
+#AboutcardBtn{
+    background-color: white;
+    border-radius: 2px;
+    border: solid 1px #cf8f17;
+    color: #cf8f17;
+    width: auto;
+    font-size: 1rem;
+    padding: 12px;
+    letter-spacing: 3px;
+}
+#AboutcardBtn:hover{
+    background-color: #cf8f17;
+    color: black;
+}
+
+.footer-distributed {
+  background: #212529;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  height: -webkit-fill-available;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+    width: 40%;
+  }
+  
+  /* The company logo */
+  
+.footer-distributed h3{
+    color:  #ffffff;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+    color:  #e9ecef;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+    width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+    background-color:  #33383b00;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+    color:  #cf8f17;
+    text-decoration: none;;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+  
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 880px) {
+  
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+  
+  }
+#footerCenter{
+    text-align: left;
+}
+#footerIcons{
+    
+}
+i:hover{
+    color: #cf8f17;
+}
+#rotatingImage {
+    transition: opacity 1s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes animateUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the value based on how much you want the image to move */
+  }
+}
+
+#rotatingImage {
+  animation: animateUpDown 4s ease-in-out infinite; /* Adjust the animation duration (4s in this case) */
+}
+
+
+.help-message-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #cf8f17;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+#helpmsg:hover
+{
+ color: #ffffff;
+}
+
+
+.custom-slide-modal .modal-dialog {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-slide-modal.show .modal-dialog {
+  transform: translateX(0);
+}
+#name,#email,#message{
+  border: solid 2px #cf8f17;
+  margin: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: #67470b0a;
+  font-weight: 100;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+#sendBtn {
+  border-radius: 2px;
+  width: 60%;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  border: solid 1px #cf8f17;
+  color: #cf8f17;
+}
+#sendBtn:hover{
+  background-color: #cf8f17;
+  color: black;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+::-webkit-scrollbar {
+  width: 2px; /* Width of the scrollbar */
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#cf8f17 /* Color of the scrollbar thumb */
+}
+
+
+
+@media(max-width:500px){
+
+  .navbar-collapse{
+    color: #cf8f17;
+    FONT-SIZE: 15px;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-right: 0px;
+
+  }
+  #navHead {
+    font-size: 20px;
+    padding-left: 5px;
+    
+}
+    #HcardBody{
+        background: #cf8f17;
+        text-align: center;
+        margin-top: -50px;
+        height:auto;
+    }
+    #cardBtn{
+        width: 150px;
+        font-size: .8rem;
+    }
+    #HcardTite{
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    #cardText{
+        word-spacing: 3px;
+        letter-spacing: 2px;
+    }
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1060;
+      display: none;
+      width: 100%;
+      height: 143%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      outline: 0;
+    }
+}
+
+
+@media(min-width:1250px){
+    #cardImage{
+        height: 100vh;
+    }
+}
+@media(max-width:350px){
+  #navHead {
+    font-size: 18px;
+    padding-left: 5px;
+    
+}
+}
