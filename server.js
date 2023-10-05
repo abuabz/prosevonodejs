@@ -45,7 +45,7 @@ app.post('/submit-form', upload.single('file'), async (req, res) => {
     text: req.body.message,
     attachments:[
       {
-        filename:'resume.pdf',
+        filename:uploadedFile.filename,
         path:uploadedFile.path
       }
     ]
