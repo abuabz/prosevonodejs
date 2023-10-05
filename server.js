@@ -1,5 +1,6 @@
 const express = require('express');
 const multer = require('multer');
+const nodeMailer = require('nodemailer')
 const path = require('path');
 const app = express();
 const PORT = 3000;
@@ -18,19 +19,47 @@ const upload = multer({ storage });
 app.use(express.static('public'));
 
 // Handle form submissions
-app.post('/submit-form', upload.single('file'), (req, res) => {
+app.post('/submit-form', upload.single('file'), async (req, res) => {
   // Access form data
-  const name = req.body.name;
-  const phone = req.body.phone;
-  const email = req.body.email;
-  const message = req.body.message;
-
   // Access the uploaded file (if any)
   const uploadedFile = req.file;
 
   // Verify CAPTCHA (replace 'YOUR_SECRET_KEY' with your actual secret key)
   const secretKey = 'YOUR_SECRET_KEY'; // Replace with your reCAPTCHA secret key
   const userResponse = req.body['g-recaptcha-response'];
+  const transporter = nodeMailer.createTransport({
+    service: "gmail",
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: 'demoprosevo@gmail.com',
+      pass: 'tdvy qrad fawz afrc'
+    }
+  })
+
+  const info = transporter.sendMail({
+    from:'demoprosevo@gmail.com',
+    to: 'mhdfavascheru@gmail.com',
+    subject: 'Resume attachment',
+    text: req.body.message,
+    attachments:[
+      {
+        filename:'resume.pdf',
+        path:uploadedFile.path
+      }
+    ]
+  }, (error, info) => {
+    if (error) {
+      console.error('Error senting message', error);
+    } else {
+      console.log('Email sent:', info.response);
+    }
+  });
+
+
+  console.log(req.body)
+  console.log(uploadedFile);
 
   // You can use a library like 'axios' to make a POST request to reCAPTCHA API
   // and verify the user's response.

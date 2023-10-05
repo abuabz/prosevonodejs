@@ -48,19 +48,20 @@
     <h5 id="JoinTeam" style="    font-size: large;
             text-align: center; color: #cf8f17;">Apply Now</h5>
     <div class="formField">
-      <form action="/submit-form" method="POST" enctype="multipart/form-data" onsubmit="return submitForm();">
-        <input type="text" name="" id="" placeholder="Name" required>
-        <input type="number" name="" id="" placeholder="Phone" required>
-        <input type="email" name="" id="" placeholder="Email" required>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Messege" required></textarea>
+      <form id="gform" action="/submit-form" method="POST" enctype="multipart/form-data" onsubmit="return submitForm();">
+        <!-- <form id="gform" action="https://script.google.com/macros/s/AKfycbwwRQjMzGlaxC-xcQgm_1bscq54jBudv4nQrDmwSGFgacmMpe3ZCZR9ssLlZmhdDYO8/exec" method="POST" enctype="multipart/form-data" > -->
+        <input type="text" name="Name" id="" placeholder="Name" required>
+        <input type="number" name="Phone" id="" placeholder="Phone" required>
+        <input type="email" name="Email" id="" placeholder="Email" required>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Messege" required></textarea>
         <span id="captchaError" style="color: red;"></span>
         <div class="g-recaptcha" data-sitekey="6LdjdponAAAAAOvi7XOqZtNIC0iJ4XT5wUtfvF7q" style="text-align: -webkit-center;padding-bottom: 23px;"></div>
         <div class="file-input-container">
-          <input type="file" name="" id="fileChoose" class="file-input" required>
+          <input type="file" name="file" id="fileChoose" class="file-input" required>
           <label for="fileChoose" class="custom-file-button"><i class="bi bi-paperclip"></i> Attach Resume</label>
           <span id="file-name"></span>
           <span id="file-error" style="color: red;"></span>
-          <button id="submitBtn" type="submit" class="btn" onclick="submitForm()">Submit</button>
+          <button id="submitBtn" type="submit" class="btn" >Submit</button>
         </div>
       </form>
 
