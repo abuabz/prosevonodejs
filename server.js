@@ -90,7 +90,7 @@ app.post('/submit-form', upload.single('file'), async (req, res) => {
   // ...
 
   // Send a response to the client
-  res.send('Form submitted successfully!');
+  return res.redirect('/')
 });
 
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
