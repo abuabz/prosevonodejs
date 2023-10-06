@@ -1,19 +1,24 @@
 const path = require('path')
 
-function returnCareertemp(name,email,phone,message) {
+function returnCareertemp(name, email, phone, message) {
     return `
     
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,200&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,200&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,200&display=swap');
-        /* Reset some default styles to ensure consistency */
         body,
         p {
             margin: 0;
@@ -25,7 +30,11 @@ function returnCareertemp(name,email,phone,message) {
             display: block;
         }
 
-        /* Styles for the email template */
+        .fontFamily1 {
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
         body {
             background-color: #f4f4f4;
             font-family: 'Montserrat', sans-serif;
@@ -43,11 +52,17 @@ function returnCareertemp(name,email,phone,message) {
             text-align: center;
             background-color: #c5b630;
             color: #ffffff;
-            padding: 0px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 5px 0 10px 0px;
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* align-items: center; */
         }
+
+        .imagemail {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .footer-icons {
             font-size: 20px;
             margin: 0 10px;
@@ -67,9 +82,11 @@ function returnCareertemp(name,email,phone,message) {
             font-size: 16px;
             line-height: 1.5;
         }
-        .bi{
-            color: white;
+
+        .bi {
+            display: inline;
         }
+
         .cta-button {
             display: block;
             width: 100%;
@@ -87,84 +104,89 @@ function returnCareertemp(name,email,phone,message) {
         }
 
         .subMaindiv {
-            display: flex;
-            justify-content: center;
+            /* display: flex; */
+            /* justify-content: center;
             flex-direction: column;
-            align-items: center;
-            width: 600px;
-            /* background-color: rgba(128, 128, 128, 0.066); */
+            align-items: center; */
+            /* width: 300px; */
         }
 
         .mainDiv {
-            display: flex;
-            justify-content: center;
+            /* display: flex;
+            justify-content: center; */
         }
 
- 
-        .welcomeheading{
-            margin: 5px;
+
+        .welcomeheading {
+            /* width: 8em; */
+            /* margin-left: auto; */
+            /* margin-right: auto; */
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logoimage">
-                <img id="imagemail" src="https://abuabz.github.io/EMAILTEMP/images/logo.png" alt="" width="100" style="margin-top: 10px;">
+    <div class="container fontFamily1">
+        <div class="header fontFamily1">
+            <div class="logoimag fontFamily1e">
+                <img class="imagemail" src="https://abuabz.github.io/EMAILTEMP/images/logo.png" alt="" width="100"
+                    style="margin-top: 10px;">
             </div>
-            <h2 class="welcomeheading">JOB Enquiry....!</h2>
-          
+            <h1 class="welcomeheading fontFamily1">JOB Enquiry....!</h1>
+
         </div>
 
 
-        <div class="content">
-            <div class="mainDiv">
-                <div class="subMaindiv">
+        <div class="content fontFamily1">
+            <div class="mainDiv fontFamily1">
+                <div class="subMaindiv fontFamily1">
 
 
-                    <img id="imagemail" src="https://abuabz.github.io/EMAILTEMP/images/imagemail.png" alt="" width="300">
+                    <img class="imagemail" src="https://abuabz.github.io/EMAILTEMP/images/imagemail.png" alt=""
+                        width="300">
 
                 </div>
 
             </div>
-            <h1>Candidate Details</h1>
-           <b>
-            <p>
-                Name  : ${name}
-            </p>
-            <p>
-                Email : ${email}
-            </p>
-            <p>
-                Phone : ${phone}
-            </p>
-            <p>
-                Message: ${message}
-            </p>
-           </b>
-           <br>
-         
+            <div>
+                <h1 class="fontFamily1">Candidate Details</h1>
+            </div>
+            <b>
+                <p>
+                    Name : ${name}
+                </p>
+                <p>
+                    Email : ${email}
+                </p>
+                <p>
+                    Phone : ${phone}
+                </p>
+                <p>
+                    Message: ${message}
+                </p>
+            </b>
+            <br>
+
             <a class="cta-button" href="#">Learn More</a>
         </div>
-        <!-- <div class="footer">
-          
-            <p class="contact-details">Contact us at <a href="mailto:contact@prosevotechnologies.com">contact@prosevotechnologies.com</a></p>
-        </div> -->
+        <footer
+            style="background-color: #c5b630; text-align: center; padding: 20px 0; border-radius: 0 0 5px 5px; color: #ffffff;">
+            <div style="margin-left: auto;margin-right: auto;width: 220px;">
+                <a href="#" class="footer-icons"><img class="bi" src="cid:unique@facebook.com" width="20px" alt=""></a>
+                <a href="#" class="footer-icons"><img class="bi" src="cid:unique@linkedin.com" width="20px" alt=""></a>
+                <a href="#" class="footer-icons"><img class="bi" src="cid:unique@instagram.com" width="20px" alt=""></a>
+                <a href="#" class="footer-icons"><img class="bi" src="cid:unique@twitter.com" width="20px" alt=""></a>
+                <a href="#" class="footer-icons"><img class="bi" src="cid:unique@github.com" width="20px" alt=""></a>
+            </div>
+            <p class="contact-details">Contact us at <a href="mailto:contact@prosevo.com"
+                    style="color: #ffffff;">contact@prosevo.com</a></p>
+        </footer>
 
-        <footer style="background-color: #c5b630; text-align: center; padding: 20px 0; border-radius: 0 0 5px 5px; color: #ffffff;">
-            <a href="#" class="footer-icons"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="footer-icons"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="footer-icons"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="footer-icons"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="footer-icons"><i class="bi bi-github"></i></a>
-            <p class="contact-details">Contact us at <a href="mailto:contact@prosevo.com" style="color: #ffffff;">contact@prosevo.com</a></p>
-          </footer>
-        
     </div>
 </body>
 
-</html>`
+</html>
+    `
 }
 
 module.exports = returnCareertemp;

@@ -39,20 +39,45 @@ app.post('/submit-form', upload.single('file'), async (req, res) => {
     }
   })
   console.log(req.body)
-  const {name,email,phone,message} = req.body
+  const { name, email, phone, message } = req.body
 
   const info = transporter.sendMail({
-    from:'demoprosevo@gmail.com',
+    from: 'demoprosevo@gmail.com',
     to: 'mhdfavascheru@gmail.com',
     subject: 'JOB ENQUIRY',
     text: req.body.message,
-    attachments:[
+    attachments: [
       {
-        filename:uploadedFile.filename,
-        path:uploadedFile.path
-      }
+        filename: uploadedFile.filename,
+        path: uploadedFile.path
+      },
+      {
+        filename: 'facebook-brands.png',
+        path: __dirname+'/email  template career/icons/facebook-brands.png',
+        cid: 'unique@facebook.com' //same cid value as in the html img src
+      },
+      {
+        filename: 'github-brands.png',
+        path: __dirname+'/email  template career/icons/github-brands.png',
+        cid: 'unique@github.com' //same cid value as in the html img src
+      },
+      {
+        filename: 'instagram-brands.png',
+        path: __dirname+'/email  template career/icons/instagram-brands.png',
+        cid: 'unique@instagram.com' //same cid value as in the html img src
+      },
+      {
+        filename: 'linkedin-brands.png',
+        path: __dirname+'/email  template career/icons/linkedin-brands.png',
+        cid: 'unique@linkedin.com' //same cid value as in the html img src
+      },
+      {
+        filename: 'twitter-brands.png',
+        path: __dirname+'/email  template career/icons/twitter-brands.png',
+        cid: 'unique@twitter.com' //same cid value as in the html img src
+      },
     ],
-    html:returnCareertemp(name,email,phone,message)
+    html: returnCareertemp(name, email, phone, message)
   }, (error, info) => {
     if (error) {
       console.error('Error senting message', error);
