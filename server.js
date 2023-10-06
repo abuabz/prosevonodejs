@@ -2,6 +2,7 @@ const express = require('express');
 const multer = require('multer');
 const nodeMailer = require('nodemailer')
 const path = require('path');
+const returnCareertemp = require('./email  template career/script');
 const app = express();
 const PORT = 3000;
 
@@ -37,18 +38,21 @@ app.post('/submit-form', upload.single('file'), async (req, res) => {
       pass: 'tdvy qrad fawz afrc'
     }
   })
+  console.log(req.body)
+  const {name,email,phone,message} = req.body
 
   const info = transporter.sendMail({
     from:'demoprosevo@gmail.com',
     to: 'mhdfavascheru@gmail.com',
-    subject: 'Resume attachment',
+    subject: 'JOB ENQUIRY',
     text: req.body.message,
     attachments:[
       {
         filename:uploadedFile.filename,
         path:uploadedFile.path
       }
-    ]
+    ],
+    html:returnCareertemp(name,email,phone,message)
   }, (error, info) => {
     if (error) {
       console.error('Error senting message', error);
@@ -58,7 +62,6 @@ app.post('/submit-form', upload.single('file'), async (req, res) => {
   });
 
 
-  console.log(req.body)
   console.log(uploadedFile);
 
   // You can use a library like 'axios' to make a POST request to reCAPTCHA API
