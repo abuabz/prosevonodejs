@@ -50,7 +50,7 @@ function returnCareertemp(name, email, phone, message) {
 
         .header {
             text-align: center;
-            background-color: #c5b630;
+            background-color: #ffffff;
             color: #ffffff;
             padding: 5px 0 10px 0px;
             /* display: flex; */
@@ -59,6 +59,11 @@ function returnCareertemp(name, email, phone, message) {
         }
 
         .imagemail {
+            margin-left: auto;
+            /* margin-right: auto; */
+        }
+
+        .imagemaill {
             margin-left: auto;
             margin-right: auto;
         }
@@ -129,10 +134,11 @@ function returnCareertemp(name, email, phone, message) {
     <div class="container fontFamily1">
         <div class="header fontFamily1">
             <div class="logoimag fontFamily1e">
-                <img class="imagemail" src="https://abuabz.github.io/EMAILTEMP/images/logo.png" alt="" width="100"
-                    style="margin-top: 10px;">
+                <img class="imagemail"
+                    src="https://bitbucket.org/prosevotechnologies/second_logo_2023/raw/36b87524d15d88e15a8d36c432ddcfe067d2c93a/black%20text%20Logo/4x/Artboard%201%20copy%207%404x.png"
+                    alt="" width="100" style="margin-top: 10px;">
             </div>
-            <h1 class="welcomeheading fontFamily1">JOB Enquiry....!</h1>
+            <!-- <h1 class="welcomeheading fontFamily1">JOB Enquiry....!</h1> -->
 
         </div>
 
@@ -142,7 +148,7 @@ function returnCareertemp(name, email, phone, message) {
                 <div class="subMaindiv fontFamily1">
 
 
-                    <img class="imagemail" src="https://abuabz.github.io/EMAILTEMP/images/imagemail.png" alt=""
+                    <img class="imagemaill" src="https://abuabz.github.io/EMAILTEMP/images/msgimmage.png" alt=""
                         width="300">
 
                 </div>
@@ -167,20 +173,13 @@ function returnCareertemp(name, email, phone, message) {
             </b>
             <br>
 
-            <a class="cta-button" href="#">Learn More</a>
         </div>
-        <footer
-            style="background-color: #c5b630; text-align: center; padding: 20px 0; border-radius: 0 0 5px 5px; color: #ffffff;">
-            <div style="margin-left: auto;margin-right: auto;width: 220px;">
-                <a href="#" class="footer-icons"><img class="bi" src="cid:unique@facebook.com" width="20px" alt=""></a>
-                <a href="#" class="footer-icons"><img class="bi" src="cid:unique@linkedin.com" width="20px" alt=""></a>
-                <a href="#" class="footer-icons"><img class="bi" src="cid:unique@instagram.com" width="20px" alt=""></a>
-                <a href="#" class="footer-icons"><img class="bi" src="cid:unique@twitter.com" width="20px" alt=""></a>
-                <a href="#" class="footer-icons"><img class="bi" src="cid:unique@github.com" width="20px" alt=""></a>
-            </div>
+        <div
+            style="background-color: #4c3304; text-align: center; padding: 20px 0; border-radius: 0 0 5px 5px; color: #ffffff;">
+            
             <p class="contact-details">Contact us at <a href="mailto:contact@prosevo.com"
                     style="color: #ffffff;">contact@prosevo.com</a></p>
-        </footer>
+        </div>
 
     </div>
 </body>

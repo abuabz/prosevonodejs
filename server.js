@@ -43,7 +43,7 @@ app.post('/submit-form', upload.single('file'), async (req, res) => {
 
   const info = transporter.sendMail({
     from: 'demoprosevo@gmail.com',
-    to: 'mhdfavascheru@gmail.com',
+    to: 'aboobacker.p@prosevo.com',
     subject: 'JOB ENQUIRY',
     text: req.body.message,
     attachments: [
@@ -51,31 +51,31 @@ app.post('/submit-form', upload.single('file'), async (req, res) => {
         filename: uploadedFile.filename,
         path: uploadedFile.path
       },
-      {
-        filename: 'facebook-brands.png',
-        path: __dirname+'/email  template career/icons/facebook-brands.png',
-        cid: 'unique@facebook.com' //same cid value as in the html img src
-      },
-      {
-        filename: 'github-brands.png',
-        path: __dirname+'/email  template career/icons/github-brands.png',
-        cid: 'unique@github.com' //same cid value as in the html img src
-      },
-      {
-        filename: 'instagram-brands.png',
-        path: __dirname+'/email  template career/icons/instagram-brands.png',
-        cid: 'unique@instagram.com' //same cid value as in the html img src
-      },
-      {
-        filename: 'linkedin-brands.png',
-        path: __dirname+'/email  template career/icons/linkedin-brands.png',
-        cid: 'unique@linkedin.com' //same cid value as in the html img src
-      },
-      {
-        filename: 'twitter-brands.png',
-        path: __dirname+'/email  template career/icons/twitter-brands.png',
-        cid: 'unique@twitter.com' //same cid value as in the html img src
-      },
+      // {
+      //   filename: 'facebook-brands.png',
+      //   path: __dirname+'/email  template career/icons/facebook-brands.png',
+      //   cid: 'unique@facebook.com' //same cid value as in the html img src
+      // },
+      // {
+      //   filename: 'github-brands.png',
+      //   path: __dirname+'/email  template career/icons/github-brands.png',
+      //   cid: 'unique@github.com' //same cid value as in the html img src
+      // },
+      // {
+      //   filename: 'instagram-brands.png',
+      //   path: __dirname+'/email  template career/icons/instagram-brands.png',
+      //   cid: 'unique@instagram.com' //same cid value as in the html img src
+      // },
+      // {
+      //   filename: 'linkedin-brands.png',
+      //   path: __dirname+'/email  template career/icons/linkedin-brands.png',
+      //   cid: 'unique@linkedin.com' //same cid value as in the html img src
+      // },
+      // {
+      //   filename: 'twitter-brands.png',
+      //   path: __dirname+'/email  template career/icons/twitter-brands.png',
+      //   cid: 'unique@twitter.com' //same cid value as in the html img src
+      // },
     ],
     html: returnCareertemp(name, email, phone, message)
   }, (error, info) => {
