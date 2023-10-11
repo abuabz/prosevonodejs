@@ -45,9 +45,10 @@ body {
     background-color: #fff0;
     background-clip: border-box;
     border-radius: 0.25rem;
-    width: 22rem;
+    width: 18rem;
     border: none;
     text-align: -webkit-center;
+    align-items: center;
 }
 
 .cardsservice .card-img-top {

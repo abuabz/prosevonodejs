@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -7,6 +8,9 @@ html{
 }
 #navHead {
   font-size: 30px;
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
   padding-left: 15px;
   color: #dee2e6;
   margin-right: auto;
@@ -37,6 +41,8 @@ html{
     font-size: 3.5rem;
     font-weight: 100;
     transition: 1s;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 4px;
 
 }
 #HcardTite:hover{
@@ -89,10 +95,10 @@ html{
     text-align: -webkit-center;
 }
 #AboutcardBtn{
-    background-color: white;
-    border-radius: 2px;
+  background-color: #cf8f17;
+    color: rgb(255, 255, 255);
+        border-radius: 2px;
     border: solid 1px #cf8f17;
-    color: #cf8f17;
     width: auto;
     font-size: 1rem;
     padding: 12px;
