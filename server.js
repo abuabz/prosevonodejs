@@ -43,7 +43,7 @@ app.post('/submit-form', upload.single('file'), async (req, res) => {
 
   const info = transporter.sendMail({
     from: 'demoprosevo@gmail.com',
-    to: 'hr@prosevo.com',
+    to: 'aboobacker.p@prosevo.com',
     subject: 'JOB ENQUIRY',
     text: req.body.message,
     attachments: [
