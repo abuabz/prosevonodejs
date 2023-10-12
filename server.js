@@ -26,8 +26,8 @@ app.post('/submit-form', upload.single('file'), async (req, res) => {
   const uploadedFile = req.file;
 
   // Verify CAPTCHA (replace 'YOUR_SECRET_KEY' with your actual secret key)
-  const secretKey = 'YOUR_SECRET_KEY'; // Replace with your reCAPTCHA secret key
-  const userResponse = req.body['g-recaptcha-response'];
+  // const secretKey = 'YOUR_SECRET_KEY'; // Replace with your reCAPTCHA secret key
+  // const userResponse = req.body['g-recaptcha-response'];
   const transporter = nodeMailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
@@ -38,7 +38,7 @@ app.post('/submit-form', upload.single('file'), async (req, res) => {
       pass: 'tdvy qrad fawz afrc'
     }
   })
-  console.log(req.body)
+  // console.log(req.body)
   const { name, email, phone, message } = req.body
 
   const info = transporter.sendMail({
