@@ -51,7 +51,7 @@
       <form id="gform" action="/submit-form" method="POST" enctype="multipart/form-data" onsubmit="return submitForm();">
         <!-- <form id="gform" action="https://script.google.com/macros/s/AKfycbwwRQjMzGlaxC-xcQgm_1bscq54jBudv4nQrDmwSGFgacmMpe3ZCZR9ssLlZmhdDYO8/exec" method="POST" enctype="multipart/form-data" > -->
         <input type="text" name="name" id="" placeholder="Name" required>
-        <input type="number" name="phone" id="" placeholder="Phone" required>
+        <input type="number" name="phone" id="phone" placeholder="Phone" required pattern="[0-9]{10}" max="9999999999">
         <input type="email" name="email" id="" placeholder="Email" required>
         <textarea name="message" id="" cols="30" rows="10" placeholder="Messege" required></textarea>
         <span id="captchaError" style="color: red;"></span>
@@ -126,7 +126,7 @@
     <div class="footer-right">
 
       <p class="footer-company-about">
-        <span>About the company</span>
+        <!-- <span>About the company</span> -->
         Identify the Problem, find out the Solution and Evolve your business.Evolve your business globally with right
         software solution.
       </p>
